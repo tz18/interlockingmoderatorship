@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "joke-away",
+    "file": "http://i.imgur.com/rOWh7Wp.png",
+    "link": "http://www.reddit.com/user/joke-away/"
+  },
+  "text": {
+    "title": "Subreddits by Shared Mods",
+    "more": "This is a visualization of the network of subreddits. If two subreddits are modded by the same moderator, there\u0027s an edge between them. A module is a group of nodes where each node is more likely to link to other nodes in the group than would be expected at random; coloring is by module. Size is by total number of subscribers.\n\nThe data was graciously donated by admin /u/Deimorz. The visualization was created using the Sigma.js exporter plug-in for Gephi, from the Oxford Internet Institute.",
+    "intro": "This is a visualization of the network of subreddits."
+  },
+  "legend": {
+    "edgeLabel": "Shares moderator with",
+    "colorLabel": "Module",
+    "nodeLabel": "Subreddit"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "Modularity Class",
+    "hoverBehavior": "Dim"
+  },
+  "informationPanel": {
+    "imageAttribute": false,
+    "groupByEdgeDirection": false
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 0.2,
+      "maxNodeSize": 7,
+      "maxEdgeSize": 0.5,
+      "minNodeSize": 1
+    },
+    "drawingProperties": {
+      "labelThreshold": 10,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}
